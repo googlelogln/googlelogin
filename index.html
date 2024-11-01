@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Google</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    <h2>Sign in</h2>
+    <p>to continue to Google</p>
+    <form id="loginForm">
+      <input type="email" id="email" class="input-field" placeholder="Email or phone" required>
+      <a href="#" class="forgot-email">Forgot email?</a>
+      <input type="password" id="password" class="input-field" placeholder="Enter your password" required>
+      <button type="button" class="login-btn" onclick="showData()">Next</button>
+    </form>
+    <a href="#" class="create-account">Create account</a>
+  </div>
+
+  <script>
+    function showData() {
+      // Mengambil nilai email dan password
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      // Menampilkan data di konsol
+      console.log("Email:", email);
+      console.log("Password:", password);
+
+      // Atau menampilkan data di halaman
+      alert("Email: " + email + "\nPassword: " + password);
+    }
+  </script>
+</body>
+</html>
